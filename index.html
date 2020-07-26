@@ -1,0 +1,176 @@
+<style>
+    body {
+        background-color: rgb(88, 4, 88);
+    }
+    div {
+        color:white;
+        background-color: rgb(80,80,80);
+    }
+    main {
+        align-items: center;
+        display:flex;
+        flex-direction: column;
+    }
+    .recipe {
+        font-size:3vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .day {
+        width: 85vw;
+        padding: 2vh;
+        font-size:5vh;
+        box-shadow: 0px 0px 2px black;
+        bprder: 2px solid white;
+        margin: 5px;
+    }
+    .mealtime {
+        text-align:right;
+        font-size:3vh;
+    }
+    .meal {
+        text-align:left;
+        font-size:5vh;
+    }
+</style>
+<main></main>
+<script>
+data = {
+    days : {
+        Sunday:{
+            breakfast:['Blueberry Almond Chia Pudding'],
+            "a.m. snack":['Edamame','Diced Cucumber','Citrus-Lime Vinaigrette'],
+            lunch:['Canned Black Beans','Easy Brown Rice','Colorful Roasted Sheet-Pan Veggies','Creamy Vegan Cashew Sauce'],
+            "p.m. snack":['Plum'],
+            dinner:['Vegan Cauliflower Fried Rice','Soy-Lime Roasted Tofu'],
+        },
+        Monday:{
+            breakfast:['Apple-Cinnamon Overnight Oats'],
+            "a.m. snack":['Clementine','Clementine'],
+            lunch:['Citrus Lime Tofu Salad'],
+            "p.m. snack":['Blueberries'],
+            dinner:['Stuffed Sweet Potato with Hummus Dressing'],
+        },
+        Tuesday:{
+            breakfast:['Vegan Banana Bread','Peanut Butter'],
+            "a.m. snack":['Edamame','Diced Cucumber','Citrus-Lime Vinaigrette'],
+            lunch:['Mixed Greens','Colorful Roasted Sheet-Pan Veggies','Soy-Lime Roasted Tofu','Creamy Vegan Cashew Sauce'],
+            "p.m. snack":['Blueberries'],
+            dinner:['Thai Peanut Curry Noodles'],
+        },
+        Wednesday:{
+            breakfast:['Blueberry Almond Chia Pudding'],
+            "a.m. snack":['Whole-Wheat Bread','Hummus'],
+            lunch:['Thai Peanut Curry Noodles'],
+            "p.m. snack":['Edamame','Diced Cucumber','Citrus-Lime Vinaigrette'],
+            dinner:['Stuffed Sweet Potato with Hummus Dressing'],
+        },
+        Thursday:{
+            breakfast:['Vegan Banana Bread','Peanut Butter'],
+            "a.m. snack":['Edamame','Diced Cucumber','Citrus-Lime Vinaigrette'],
+            lunch:['Green Salad with Edamame & Beets'],
+            "p.m. snack":['Hummus','Carrots'],
+            dinner:['Vegan BLATs (BLT with Avocado)'],
+        },
+        Friday:{
+            breakfast:['Vegan Banana Bread','Peanut Butter'],
+            "a.m. snack":['Apple'],
+            lunch:['Green Salad with Edamame & Beets','Citrus-Lime Vinaigratte'],
+            "p.m. snack":['Clementine'],
+            dinner:['Roasted Veggie Brown Rice Buddha Bowl'],
+        },
+        Saturday:{
+            breakfast:['Apple-Cinnamon Overnight Oats'],
+            "a.m. snack":['Hummus','Cucumber Slices'],
+            lunch:['Citrus Lime Tofu Salad'],
+            "p.m. snack":['Plum'],
+            dinner:['Vegan Coconut Chickpea Curry'],
+        },
+    },
+    recipetitles: [
+        'Vegan Banana Bread',
+        'Green Salad with Edamame & Beets',
+        'Citrus-Lime Vinaigrette',
+        'Roasted Veggie Brown Rice Buddha Bowl',
+        'Easy Brown Rice',
+        'Colorful Roasted Sheet-Pan Veggies',
+        'Soy-Lime Roasted Tofu',
+        'Creamy Vegan Cashew Sauce',
+        'Apple-Cinnamon Overnight Oats',
+        'Citrus Lime Tofu Salad',
+        'Vegan Coconut Chickpea Curry',
+        'Blueberry Almond Chia Pudding',
+        'Vegan Cauliflower Fried Rice',
+        'Stuffed Sweet Potato with Hummus Dressing',
+        'Thai Peanut Curry Noodles',
+        'Vegan BLATs (BLTs with Avocado)',
+    ],
+    recipes: {
+        'Vegan Banana Bread':'Vegan Banana Bread|Active:|20 mins|Total:|2 hrs 20 mins|Servings:|12|Nutrition Profile: |Heart Healthy|Low Sodium|High Fiber|Nutrition Facts|Serving Size: 1 Slice|Per Serving:|207 calories; 7 g total fat; 0.5 g saturated fat; 190 mg sodium. 147 mg potassium; 34.9 g carbohydrates; 3.3 g fiber; 16 g sugar; 3.3 g protein; 51 IU vitamin a iu; 3 mg vitamin c; 7 mcg folate; 81 mg calcium; 3 mg iron; 14 mg magnesium; 13 g added sugar;|Exchanges: |1 Fat, 1 Other Carbohydrate, 1 Starch, 1/2 Fruit|Ingredients| |5 tablespoons water| |2 tablespoons flaxseed meal| |¾ cup unsweetened almond milk| |¾ cup sugar| |⅓ cup canola oil| |1 teaspoon vanilla extract| |1 ½ cups mashed overripe bananas (3-4 medium)| |2 cups white whole-wheat flour| |2 teaspoons baking powder| |1 teaspoon ground cinnamon| |½ teaspoon salt| |½ cup bittersweet chocolate chips (optional)|Directions| Step 1|Preheat oven to 350 degrees F. Coat a 9-by-5-inch loaf pan with cooking spray.| Step 2|Stir water and flaxseed meal together in a small bowl. Let stand for a few minutes.| Step 3|Whisk almond milk, sugar, oil, vanilla and the flaxseed mixture in a medium bowl. Stir in mashed bananas. Combine flour, baking powder, cinnamon and salt in a large bowl. Stir the wet ingredients into the dry ingredients until just combined. If desired, add chocolate chips, stirring just to combine; do not overmix. Transfer the batter to the prepared pan.| Step 4|Bake until golden brown and a toothpick inserted in the center comes out clean, about 1 hour. Cool in the pan for 10 minutes, then turn out onto a wire rack. Let cool for 1 hour before slicing.',
+        'Green Salad with Edamame & Beets':'Green Salad with Edamame & Beets|Active:15 mins|Total:15 mins|Servings:1|Nutrition Profile: |Dairy-Free|Nut-Free|Healthy Aging|Healthy Pregnancy|Low-Calorie|Vegetarian|Egg Free|Gluten-Free|Healthy Immunity|High Fiber|Vegan|Ingredients| |2 cups mixed salad greens| |1 cup shelled edamame, thawed| |½ medium raw beet, peeled and shredded (about 1/2 cup)| |1 tablespoon plus 1 1/2 teaspoons red-wine vinegar| |1 tablespoon chopped fresh cilantro| |2 teaspoons extra-virgin olive oil| |Freshly ground pepper to taste|Directions| Step 1|Arrange greens, edamame and beet on a large plate. Whisk vinegar, cilantro, oil, salt and pepper in a small bowl. Drizzle over the salad and enjoy|',
+        'Citrus-Lime Vinaigrette':'Citrus-Lime Vinaigrette|Total:10 mins|Servings:8|Nutrition Profile: |Dairy-Free|Nut-Free|Diabetic Appropriate|Heart Healthy|Low Carbohydrate|Vegan|Egg Free|Soy-Free|Gluten-Free|Low-Calorie|Low Sodium|Vegetarian|Ingredients| |¼ cup canola oil| |¼ cup lime juice| |¼ cup orange juice| |2 teaspoons minced fresh jalapeno pepper| |¼ cup snipped fresh cilantro| |¼ teaspoon salt| |⅛ teaspoon ground black pepper|Directions| Step 1|In a screw-top jar combine all of the ingredients. Cover and shake well.',
+        'Roasted Veggie Brown Rice Buddha Bowl':'Roasted Veggie Brown Rice Buddha Bowl|Active:5 mins|Total:5 mins|Servings:1|Nutrition Profile: |Dairy-Free|Bone Health|Healthy Immunity|High Calcium|Vegan|Egg Free|Healthy Aging|Healthy Pregnancy|High Fiber|Vegetarian|Ingredients| |½ cup cooked brown rice (see associated recipes)| |1 cup roasted vegetables (see associated recipes)| |1 cup roasted tofu (see associated recipes)| |2 tablespoons sliced scallions| |2 tablespoons chopped fresh cilantro| |2 tablespoons Creamy Vegan Cashew Sauce (see associated recipes)|Directions| Step 1|Arrange rice, veggies and tofu in a bowl or 4-cup sealable container. Sprinkle with scallions and cilantro. When ready to serve, top with cashew sauce.',
+        'Easy Brown Rice':'Easy Brown Rice|Active:5 mins|Total:1 hr|Servings:6|Nutrition Profile: |Dairy-Free|Nut-Free|Diabetic Appropriate|Heart Healthy|Low Fat|Vegan|Egg Free|Soy-Free|Gluten-Free|Low-Calorie|Low Sodium|Vegetarian|Ingredients|2 ½ cups water or broth| |1 cup brown rice|Directions| Step 1|Combine water (or broth) and rice in a medium saucepan. Bring to a boil. Reduce heat to low, cover and simmer until tender and most of the liquid has been absorbed, 40 to 50 minutes. Let stand 5 minutes, then fluff with a fork.',
+        'Colorful Roasted Sheet-Pan Veggies':'Colorful Roasted Sheet-Pan Veggies|Active:15 mins|Total:45 mins|Servings:8|Nutrition Profile: |Dairy-Free|Nut-Free|Diabetic Appropriate|Healthy Immunity|High Fiber|Low Carbohydrate|Vegan|Egg Free|Soy-Free|Gluten-Free|Heart Healthy|Low-Calorie|Low Sodium|Vegetarian|Ingredients| |3 cups cubed butternut squash (1-inch)| |3 tablespoons extra-virgin olive oil, divided| |4 cups broccoli florets| |2 red bell peppers, cut into squares| |1 large red onion, cut into bite-size chunks| |2 teaspoons Italian seasoning or herbes de Provence| |1 teaspoon coarse kosher salt| |¼ teaspoon pepper| |1 tablespoon best-quality balsamic vinegar|Directions| Step 1|Preheat oven to 425 degrees F.| Step 2|Toss squash and 1 tablespoon oil in a large bowl. Spread out on a baking sheet. Roast for 10 minutes.| Step 3|Meanwhile, toss broccoli, bell peppers, onion, Italian seasoning (or herbes de Provence), salt and pepper in the bowl with the remaining 2 tablespoons olive oil until the vegetables are evenly coated.| Step 4|Add the squash to the vegetables in the bowl. Toss to combine. Spread the vegetables out on 2 baking sheets, dividing evenly. Roast, stirring once or twice, until the vegetables are tender and browned in spots, 17 to 20 minutes. Drizzle with vinegar.',
+        'Soy-Lime Roasted Tofu':'Soy-Lime Roasted Tofu|Active:15 mins|Total:1 hr 35 mins|Servings:4|Nutrition Profile: |Dairy-Free|Diabetic Appropriate|Healthy Aging|Heart Healthy|Low Added Sugars|Low Carbohydrate|Vegan|Bone Health|Gluten-Free|Healthy Pregnancy|High Calcium|Low-Calorie|Low Sodium|Vegetarian|Ingredients| |2 (14 ounce) packages extra-firm, water-packed tofu, drained| |⅔ cup reduced-sodium soy sauce| |⅔ cup lime juice| |6 tablespoons toasted sesame oil|Directions| Step 1|Pat tofu dry and cut into 1/2- to 3/4-inch cubes. Combine soy sauce, lime juice and oil in a medium bowl or large sealable plastic bag. Add the tofu; gently toss to combine. Marinate in the refrigerator for 1 hour or up to 4 hours, gently stirring once or twice.| Step 2|Preheat oven to 450 degrees F.| Step 3|Remove the tofu from the marinade with a slotted spoon (discard marinade). Spread out on 2 large baking sheets, making sure the pieces are not touching. Roast, gently turning halfway through, until golden brown, about 20 minutes.',
+        'Creamy Vegan Cashew Sauce':'Creamy Vegan Cashew Sauce|Active:10 mins|Total:10 mins|Servings:8|Nutrition Profile: |Dairy-Free|Gluten-Free|Vegetarian|Egg Free|Vegan|Ingredients| |¾ cup raw cashews| |½ cup water| |¼ cup packed fresh parsley leaves| |1 tablespoon lemon juice or cider vinegar| |1 tablespoon extra-virgin olive oil| |½ teaspoon reduced-sodium tamari or soy sauce| |¼ teaspoon salt|Directions| Step 1|Combine cashews, water, parsley, lemon juice (or vinegar), oil, tamari (or soy sauce) and salt in a blender. Puree, stopping and scraping down the sides as necessary, until smooth.',
+        'Apple-Cinnamon Overnight Oats':'Apple-Cinnamon Overnight Oats|Active:10 mins|Total:6 hrs|Servings:1|Nutrition Profile: |Dairy-Free|Soy-Free|Low-Calorie|Vegetarian|Egg Free|Gluten-Free|Vegan|Ingredients| |½ cup old-fashioned rolled oats (see Tip)| |½ cup unsweetened almond milk| |½ tablespoon chia seeds (optional)| |1 teaspoon maple syrup| |¼ teaspoon ground cinnamon| |Pinch of salt| |½ cup diced apple| |2 tablespoons toasted pecans (optional)|Directions| Step 1|Combine oats, almond milk, chia seeds (if using), maple syrup, cinnamon and salt in a pint-sized jar and stir. Cover and refrigerate overnight.| Step 2|Before serving, top with apple and pecans, if desired.',
+        'Citrus Lime Tofu Salad':'Citrus Lime Tofu Salad|Active:5 mins|Total:5 mins|Servings:1|Nutrition Profile: |Dairy-Free|Nut-Free|Healthy Aging|Healthy Pregnancy|High Fiber|Vegetarian|Egg Free|Bone Health|Healthy Immunity|High Calcium|Vegan|Ingredients| |2 cups mixed greens| |1 cup roasted vegetables, chopped if desired (see associated recipes)| |1 cup roasted tofu (see associated recipes)| |1 tablespoon pumpkin seeds| |2 tablespoons Citrus-Lime Vinaigrette (see associated recipes)|Directions| Step 1|Arrange greens, veggies, tofu and pumpkin seeds in a 4-cup sealable container or bowl. Drizzle vinaigrette over the salad just before serving.',
+        'Vegan Coconut Chickpea Curry':'Vegan Coconut Chickpea Curry|Active:20 mins|Total:20 mins|Servings:4|Nutrition Profile: |Dairy-Free|Nut-Free|Gluten-Free|Healthy Immunity|High Fiber|Low Sodium|Vegetarian|Egg Free|Soy-Free|Healthy Aging|Healthy Pregnancy|Low-Calorie|Vegan|Ingredients| |2 teaspoons avocado oil or canola oil| |1 cup chopped onion| |1 cup diced bell pepper| |1 medium zucchini, halved and sliced| |1 (15 ounce) can chickpeas, drained and rinsed| |1 ½ cups coconut curry simmer sauce (see Tip)| |½ cup vegetable broth| |4 cups baby spinach| |2 cups precooked brown rice, heated according to package instructions|Directions| Step 1|Heat oil in a large skillet over medium-high heat. Add onion, pepper and zucchini; cook, stirring often, until the vegetables begin to brown, 5 to 6 minutes.| Step 2|Add chickpeas, simmer sauce and broth and bring to a simmer, stirring. Reduce heat to medium-low and simmer until the vegetables are tender, 4 to 6 minutes. Stir in spinach just before serving. Serve over rice.',
+        'Blueberry Almond Chia Pudding':'Blueberry Almond Chia Pudding|Active:10 mins|Total:8 hrs 10 mins|Servings:1|Nutrition Profile: |Dairy-Free|Soy-Free|Diabetic Appropriate|Healthy Aging|Heart Healthy|High Fiber|Low Sodium|Vegetarian|Egg Free|Bone Health|Gluten-Free|Healthy Pregnancy|High Calcium|Low-Calorie|Vegan|Ingredients| |½ cup unsweetened almond milk or other nondairy milk beverage| |2 tablespoons chia seeds| |2 teaspoons pure maple syrup| |⅛ teaspoon almond extract| |½ cup fresh blueberries, divided| |1 tablespoon toasted slivered almonds, divided|Directions| Step 1|Stir together almond milk (or other nondairy milk beverage), chia, maple syrup and almond extract in a small bowl. Cover and refrigerate for at least 8 hours and up to 3 days.| Step 2|When ready to serve, stir the pudding well. Spoon about half the pudding into a serving glass (or bowl) and top with half the blueberries and almonds. Add the rest of the pudding and top with the remaining blueberries and almonds.',
+        'Vegan Cauliflower Fried Rice':'Vegan Cauliflower Fried Rice|Active:20 mins|Total:20 mins|Servings:4|Nutrition Profile: |Dairy-Free|Gluten-Free|Healthy Immunity|Low-Calorie|Vegetarian|Egg Free|Healthy Aging|High Fiber|Vegan|Ingredients| |3 tablespoons peanut oil, divided| |3 scallions, sliced| |1 tablespoon grated fresh ginger| |1 tablespoon minced garlic| |½ cup diced red bell pepper| |1 cup trimmed and halved snow peas| |1 cup shredded carrots| |1 cup frozen shelled edamame, thawed| |4 cups riced cauliflower (see Tips)| |⅓ cup unsalted roasted cashews| |3 tablespoons reduced-sodium tamari or soy sauce (see Tips)| |1 teaspoon toasted sesame oil|Directions| Step 1|Heat 1 tablespoon peanut oil in a large wok or skillet over high heat. Add scallions, ginger and garlic; cook, stirring, until scallions have softened, 30 to 40 seconds. Add bell pepper, snow peas, carrots and edamame; cook, stirring, until just tender, 2 to 4 minutes. Transfer everything to a plate.| Step 2|Add the remaining 2 tablespoons peanut oil to the pan. Add cauliflower and stir until mostly softened, about 2 minutes. Return the cooked vegetables to the pan, along with cashews, tamari (or soy sauce) and sesame oil. Stir until well combined.',
+        'Stuffed Sweet Potato with Hummus Dressing':'Stuffed Sweet Potato with Hummus Dressing|Active:15 mins|Total:20 mins|Servings:1|Nutrition Profile: |Dairy-Free|Nut-Free|Gluten-Free|Healthy Immunity|Heart Healthy|High Fiber|Low Sodium|Vegetarian|Egg Free|Soy-Free|Healthy Aging|Healthy Pregnancy|High Blood Pressure|Low-Calorie|Vegan|Ingredients| |1 large sweet potato, scrubbed| |¾ cup chopped kale| |1 cup canned black beans, rinsed| |¼ cup hummus| |2 tablespoons water|Directions| Step 1|Prick sweet potato all over with a fork. Microwave on High until cooked through, 7 to 10 minutes.| Step 2|Meanwhile, wash kale and drain, allowing water to cling to the leaves. Place in a medium saucepan; cover and cook over medium-high heat, stirring once or twice, until wilted. Add beans; add a tablespoon or two of water if the pot is dry. Continue cooking, uncovered, stirring occasionally, until the mixture is steaming hot, 1 to 2 minutes.| Step 3|Split the sweet potato open and top with the kale and bean mixture. Combine hummus and 2 tablespoons water in a small dish. Add additional water as needed to reach desired consistency. Drizzle the hummus dressing over the stuffed sweet potato.',
+        'Thai Peanut Curry Noodles':'Thai Peanut Curry Noodles|Total:30 mins|Servings:4|Nutrition Profile: |Dairy-Free|High Fiber|Vegan|Healthy Aging|Low Added Sugars|Vegetarian|Ingredients| |8 ounces whole-wheat spaghetti| |½ cup smooth natural peanut butter| |1 small shallot, minced| |2 tablespoons Thai green, red or yellow curry paste| |1 tablespoon minced fresh ginger| |1 tablespoon reduced-sodium soy sauce| |2 teaspoons toasted sesame oil| |¼ teaspoon salt| |½ cup frozen edamame (thawed)| |1 medium red bell pepper, cut into matchsticks| |1 cup matchstick-cut peeled kohlrabi or broccoli stem| |¼ cup coarsely chopped fresh cilantro (optional)|Directions| Step 1|Bring a large saucepan of water to a boil. Add spaghetti and cook according to package directions. Reserve 1/4 cup of the water, then drain the pasta and rinse well with cold water.| Step 2|Whisk the reserved pasta water, peanut butter, shallot, curry paste, ginger, soy sauce, oil and salt in a large bowl. Add the pasta, edamame, bell pepper and kohlrabi (or broccoli stem); toss well to coat. Serve topped with cilantro, if desired.',
+        'Vegan BLATs (BLTs with Avocado)':'Vegan BLATs (BLTs with Avocado)|Active:20 mins|Total:35 mins|Servings:4|Nutrition Profile: |Dairy-Free|Nut-Free|Vegan|Egg Free|Low-Calorie|Vegetarian|Ingredients| |1 tablespoon avocado oil| |2 tablespoons reduced-sodium tamari| |½ teaspoon smoked paprika| |8 ounces whole shiitake mushrooms, stems removed| |8 small slices whole-grain bread (or 4 large slices, halved)| |4 tablespoons vegan mayonnaise| |½ teaspoon finely grated or minced garlic| |1 avocado, halved and sliced| |8 thin slices tomato| |4 leaves romaine lettuce|Directions| Step 1|Preheat oven to 375 degrees F.| Step 2|Stir oil, tamari and paprika together in a medium bowl. Add shiitakes and stir until all the liquid is absorbed. Spread on a rimmed baking sheet and roast, turning once, until golden brown on both sides, about 30 minutes.| Step 3|Toast bread. Stir mayonnaise and garlic together in a small bowl.| Step 4|Spread 1 tablespoon of the mayonnaise mixture on each of 4 pieces of toast. Divide avocado, tomato, lettuce and the roasted shiitakes over the toasts. Top with the remaining toasts.',
+    }
+}
+let placeholderElement = document.createElement('div');
+let placeholderFunction = placeholderParam => renderer;
+let getMain = f => document.querySelector('main');
+let genElement = (content,parent,styleClass) => {
+    let el = document.createElement('div');
+    el.innerHTML = content;
+    el.onclick = f => toggleChildren(el);
+    el.classList.add(styleClass);
+    parent.appendChild(el)
+    return el;
+}
+let addRecipe = (name,parent) => {
+    let recipe = data.recipes[name] || '';
+    let el = document.createElement('div');
+    el.classList.add('recipe');
+    el.innerText = recipe.replace(/\|/g,'\n');
+    parent.appendChild(el);
+}
+let toggleChildren = parent => {
+    for (let el of [...parent.children])
+        el.style.display = (el.style.display == 'none') ? '' : 'none';
+}
+let renderer = {
+    day:day => {
+        renderer.lastDayRendered = genElement(day,getMain(),'day');
+        return renderer;
+    },
+    mealtime:mealtime => {
+        renderer.lastMealtimeRendered = genElement(mealtime,renderer.lastDayRendered,'mealtime');
+        return renderer;
+    },
+    meal:meal => {
+        addRecipe(meal,genElement(meal,renderer.lastMealtimeRendered,'meal'));
+        return renderer;
+    },
+    lastDayRendered:placeholderElement,
+    lastMealtimeRendered:placeholderElement,
+}
+for (let [day, mealtimes] of Object.entries(data.days)){
+    renderer.day(day);
+    for (let [mealtime, meals] of Object.entries(mealtimes)){
+        renderer.mealtime(mealtime);
+        for (let meal of meals){
+            renderer.meal(meal);
+        } 
+    }
+    renderer.lastDayRendered.click();
+}
+
+</script>
