@@ -130,7 +130,7 @@ let getMain = f => document.querySelector('main');
 let genElement = (content,parent,styleClass) => {
     let el = document.createElement('div');
     el.innerHTML = content;
-    el.onclick = f => toggleChildren(el);
+    el.onclick = e => {e.stopPropagation();toggleChildren(el);};
     el.classList.add(styleClass);
     parent.appendChild(el)
     return el;
@@ -139,6 +139,7 @@ let addRecipe = (name,parent) => {
     let recipe = data.recipes[name] || '';
     let el = document.createElement('div');
     el.classList.add('recipe');
+    el.style.display='none';
     el.innerText = recipe.replace(/\|/g,'\n');
     parent.appendChild(el);
 }
